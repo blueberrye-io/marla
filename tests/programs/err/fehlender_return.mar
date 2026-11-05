@@ -1,0 +1,7 @@
+# ERWARTET: nicht alle Pfade
+fn clamp(x: u8) -> u8:
+    if x > 100:
+        return 100
+
+fn main():
+    let y := clamp(7)

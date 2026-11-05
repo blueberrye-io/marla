@@ -1,0 +1,5 @@
+# ERWARTET: expliziter Cast
+fn main():
+    let a: u8 := 1
+    let b: u16 := 2
+    let c := a + b

@@ -1,0 +1,3 @@
+# ERWARTET: reserviert
+fn main():
+    let task: u8 := 1

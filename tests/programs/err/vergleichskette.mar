@@ -1,0 +1,5 @@
+# ERWARTET: 0 <= x and x < 10
+fn main():
+    let x: u8 := 5
+    if 0 <= x < 10:
+        return

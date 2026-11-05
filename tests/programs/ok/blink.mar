@@ -1,0 +1,16 @@
+# das Referenzprogramm aus der Sprachreferenz
+extern fn hal_led_write(on: bool)
+extern fn hal_delay_ms(ms: u16)
+
+fn main():
+    let mut counter: u16 := 0
+    loop:
+        hal_led_write(true)
+        hal_delay_ms(500)
+        hal_led_write(false)
+        hal_delay_ms(500)
+        counter := counter + 1
+        if counter = 100:
+            counter := 0
+        if counter mod 10 <> 0:
+            hal_delay_ms(100)

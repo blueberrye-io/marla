@@ -1,0 +1,4 @@
+# ERWARTET: meintest du 'mod'
+fn main():
+    let x: u8 := 7
+    let y := x % 2

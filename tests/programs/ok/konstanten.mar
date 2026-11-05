@@ -1,0 +1,19 @@
+# const auf oberster Ebene, konstante Ausdrücke, Verwendung vor Deklaration, continue
+extern fn hal_delay_ms(ms: u16)
+
+const READY_MASK: u8 := 1 << 5
+const TIMEOUT_MS: u16 := BASE_MS * 3        # Verweis auf spätere Konstante erlaubt
+const BASE_MS: u16 := 200
+const DEBUG: bool := false
+
+fn main():
+    let mut i: u8 := 0
+    while i < 10:
+        i += 1
+        if i mod 2 = 0:
+            continue
+        hal_delay_ms(i as u16)
+    if DEBUG:
+        hal_delay_ms(TIMEOUT_MS)
+    let masked := READY_MASK & 0xFF
+    hal_delay_ms(masked as u16)

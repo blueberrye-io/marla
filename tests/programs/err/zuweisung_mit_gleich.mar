@@ -1,0 +1,4 @@
+# ERWARTET: meintest du ':='
+fn main():
+    let mut counter: u16 := 0
+    counter = counter + 1

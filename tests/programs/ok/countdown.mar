@@ -1,0 +1,17 @@
+# Funktionen, while, elif, Inferenz, Vorwärtsreferenz
+extern fn hal_delay_ms(ms: u16)
+
+fn main():
+    let start := step_width(3)
+    let mut remaining: u16 := 10
+    while remaining > 0:
+        hal_delay_ms(remaining * start)
+        remaining -= 1
+
+fn step_width(level: u8) -> u16:
+    if level = 1:
+        return 100
+    elif level = 2:
+        return 250
+    else:
+        return 500

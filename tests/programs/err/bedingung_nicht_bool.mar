@@ -1,0 +1,5 @@
+# ERWARTET: meintest du '... <> 0'
+fn main():
+    let x: u8 := 1
+    if x:
+        return

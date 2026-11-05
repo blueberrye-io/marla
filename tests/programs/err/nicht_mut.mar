@@ -1,0 +1,4 @@
+# ERWARTET: nicht veränderlich
+fn main():
+    let x: u8 := 1
+    x := 2

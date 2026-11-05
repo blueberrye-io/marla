@@ -1,0 +1,3 @@
+# ERWARTET: 'continue' ist nur innerhalb
+fn main():
+    continue

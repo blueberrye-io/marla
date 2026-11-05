@@ -1,0 +1,5 @@
+# ERWARTET: Typannotation
+const LIMIT := 100
+
+fn main():
+    return

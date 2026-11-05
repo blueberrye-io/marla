@@ -1,0 +1,3 @@
+# ERWARTET: nur innerhalb von 'while'/'loop'
+fn main():
+    break

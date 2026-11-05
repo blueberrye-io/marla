@@ -1,0 +1,3 @@
+# ERWARTET: bitte Leerzeichen verwenden
+fn main():
+	return

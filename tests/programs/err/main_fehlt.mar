@@ -1,0 +1,3 @@
+# ERWARTET: fn main()
+fn helper():
+    return

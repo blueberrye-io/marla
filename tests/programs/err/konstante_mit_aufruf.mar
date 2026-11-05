@@ -1,0 +1,7 @@
+# ERWARTET: kein konstanter Ausdruck
+extern fn hal_read() -> u8
+
+const START: u8 := hal_read()
+
+fn main():
+    return

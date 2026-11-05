@@ -1,0 +1,5 @@
+# ERWARTET: meintest du '='
+fn main():
+    let x: u8 := 1
+    if x == 1:
+        return

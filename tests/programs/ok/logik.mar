@@ -1,0 +1,13 @@
+# bool-Logik, Vergleiche, verschachtelte Blöcke, break
+fn is_valid(x: i16) -> bool:
+    return -100 <= x and x <= 100 and not (x = 0)
+
+fn main():
+    let mut x: i16 := -5
+    loop:
+        if is_valid(x) or x > 3:
+            x += 1
+        else:
+            x += 2
+        if x >= 10:
+            break

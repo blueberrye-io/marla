@@ -1,0 +1,6 @@
+# ERWARTET: zyklische Konstanten-Definition
+const A: u8 := B + 1
+const B: u8 := A + 1
+
+fn main():
+    return

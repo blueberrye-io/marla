@@ -1,0 +1,19 @@
+# Board-Konfiguration Arduino Uno Rev3 (Sprachreferenz Abschnitt 10)
+[board]
+name    = "Arduino Uno Rev3"
+mcu     = "atmega328p"
+f_cpu   = 16000000
+strings = "tagged"      # klassischer AVR: PROGMEM + Tag-Bit (6.2)
+panic   = "halt"        # Debug-Default; Deployment: "reset" (7.5)
+
+# Peripherie-Instanzen und ihre Ziel-Aktoren:
+#
+# [timer0]
+# type      = "timer"
+# period_ms = 100
+# target    = "Blinker"     # actor Blinker(...): fn receive(msg: TimerMsg)
+#
+# [uart0]
+# type   = "uart"
+# baud   = 9600
+# target = "Echo"           # actor Echo(...): fn receive(msg: UartMsg)

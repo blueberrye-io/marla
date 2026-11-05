@@ -1,0 +1,16 @@
+# Bitoperationen, Masken, Casts, Rangfolge (Bits binden stärker als Vergleiche)
+extern fn hal_led_write(on: bool)
+
+fn main():
+    let status: u8 := 0b0010_0100
+    let ready_bit: u8 := 0b0000_0100
+    if status & ready_bit <> 0:
+        hal_led_write(true)
+    let wide := (status as u16) << 8 | 0x00FF
+    if wide >= 0x2400:
+        hal_led_write(false)
+    let mut flags: u8 := 0
+    flags |= ready_bit
+    flags ^= 0xFF
+    flags &= 0x0F
+    hal_led_write(flags <> 0)

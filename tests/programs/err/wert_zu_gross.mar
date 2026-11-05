@@ -1,0 +1,5 @@
+# ERWARTET: passt nicht in 'u8'
+extern fn hal_pwm(duty: u8)
+
+fn main():
+    hal_pwm(300)
